@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavBar } from '../components/navbar';
+import { Jumbotron } from '../components/jbtron';
 
-function App() {
+
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <NavBar logo="Start Bootstrap" />
+    <div className="container">
+      <div className="row">
+        <Jumbotron tittle="Hello World!" Description="This is a simple hero unit, a simple jumbotron-style component for 
+        calling extra attention to featured content or information." buttom="Learn More" />
+      </div>
     </div>
+    </>
   );
 }
 
 export default App;
+
