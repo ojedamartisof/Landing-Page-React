@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
 
 const Cards = () => {
-    let objectos = [
+    let objetos = [
         {
             card_title: "Card Title 1",
             card_description:
@@ -35,15 +34,17 @@ const Cards = () => {
     return (
         <>
         {
-            objetos.map((objecto, indice)=>{
+            objetos.map((objeto, indice)=>{
                 return(
+                    <div className="col-md-3">
                     <div className="card">
-                <img src="..." className="card-img-top" alt="..."/>{objeto.card_img}
+                <img src={objeto.card_img} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title">{objeto.card_title}</h5>
                     <p className="card-text">{objeto.card_description}</p>
                     <a href="#" className="btn btn-primary">{objeto.card_button}</a>
                 </div>
+            </div>
             </div>
                 )
             })
