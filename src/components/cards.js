@@ -36,7 +36,7 @@ const Cards = () => {
         {
             objetos.map((objeto, indice)=>{
                 return(
-                    <div className="col-md-3">
+                    <div className="col-md-3" key = {indice}>
                     <div className="card">
                 <img src={objeto.card_img} className="card-img-top" alt="..."/>
                 <div className="card-body">
